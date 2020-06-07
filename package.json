@@ -1,0 +1,24 @@
+{
+  "name": "configuring-webpack",
+  "version": "1.0.0",
+  "description": "Configuring a webpack",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shikitos/Configuring-Webpack.git"
+  },
+  "keywords": [
+    "Webpack",
+    "npm",
+    "NodeJS"
+  ],
+  "author": "Nikita Shitov <shitovn16@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shikitos/Configuring-Webpack/issues"
+  },
+  "homepage": "https://github.com/shikitos/Configuring-Webpack#readme"
+}
