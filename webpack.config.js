@@ -1,6 +1,7 @@
 const path = require('path');
 
 module.exports = {
+    mode: 'development', //mode
     entry: './src/index.js', //entry point
     output: {
         filename: 'bundle.js', //where to connect all javascript files
