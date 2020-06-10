@@ -1,11 +1,9 @@
 const path = require("path"); //connect plugin 'path'
 const HTMLWebpackPlugin = require("html-webpack-plugin"); //connect htmlwebpackplugin
-const {
-    CleanWebpackPlugin
-} = require("clean-webpack-plugin"); //connect cleanwebpackplugin
+const { CleanWebpackPlugin } = require("clean-webpack-plugin"); //connect cleanwebpackplugin
 
 module.exports = {
-    context: path.resolve(__dirname, 'src'),
+    context: path.resolve(__dirname, "src"),
     mode: "development", //mode
     entry: {
         //entry point
@@ -27,8 +25,13 @@ module.exports = {
     ],
     module: {
         rules: [{
-            test: /\.css$/, //if webpack sees .css, it use 'use' rule
-            use: ['style-loader', 'css-loader'],
-        }]
-    }
+                test: /\.css$/, //if webpack sees .css, it use 'use' rule
+                use: ["style-loader", "css-loader"],
+            },
+            {
+                test: /\.(png|jpg|svg|gif)$/,
+                use: ["file-loader"], // for use imgs
+            },
+        ],
+    },
 };
