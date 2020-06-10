@@ -1,4 +1,5 @@
 import Post from "./Post";
+import xml from "./assets/data.xml";
 import WebpackLogo from "./assets/webpack-logo.png";
 import "./styles/style.css";
 

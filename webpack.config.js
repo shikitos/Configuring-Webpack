@@ -1,6 +1,8 @@
 const path = require("path"); //connect plugin 'path'
 const HTMLWebpackPlugin = require("html-webpack-plugin"); //connect htmlwebpackplugin
-const { CleanWebpackPlugin } = require("clean-webpack-plugin"); //connect cleanwebpackplugin
+const {
+    CleanWebpackPlugin
+} = require("clean-webpack-plugin"); //connect cleanwebpackplugin
 
 module.exports = {
     context: path.resolve(__dirname, "src"),
@@ -36,6 +38,10 @@ module.exports = {
                 test: /\.(ttf|woff|woff2|eot)$/, //fonts
                 use: ["file-loader"],
             },
+            {
+                test: /\.xml$/,
+                use: ['xml-loader']
+            }
         ],
     },
 };
