@@ -30,6 +30,9 @@ module.exports = {
             chunks: 'all' //connecting the same thing twice - put it in a separate file (vendors)
         }
     },
+    devServer: {
+        port: 4200,
+    },
     plugins: [
         //all webpack plugins
         new HTMLWebpackPlugin({

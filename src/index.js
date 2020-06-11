@@ -6,4 +6,4 @@ import "./styles/style";
 
 const post = new Post("Webpack Post Title");
 
-$("pre").html(post.toString());
+$("pre").addClass("code").html(post.toString());

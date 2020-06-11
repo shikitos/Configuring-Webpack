@@ -9,7 +9,7 @@ body {
 
 .container {
     padding-top: 2rem;
-    min-width: 1000px;
+    min-width: 840px;
     margin: 0 auto 0;
 }
 
@@ -23,4 +23,10 @@ h1 {
     height: 200px;
     width: 200px;
     margin: 0 auto;
+}
+
+.code {
+    color: crimson;
+    display: flex;
+    justify-content: center;
 }
