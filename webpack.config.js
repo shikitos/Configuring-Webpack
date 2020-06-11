@@ -18,6 +18,18 @@ module.exports = {
         //[] calls — pattern
         path: path.resolve(__dirname, "dist"), //where to add all javascript files
     },
+    resolve: {
+        extensions: ['.js', '.json', '.css', '.png', '.xml'], //what extensions we should understand by default
+        alias: {
+            '@models': path.resolve(__dirname, 'src/models'), //path to models 
+            '@': path.resolve(__dirname, 'src')
+        }
+    },
+    optimization: {
+        splitChunks: {
+            chunks: 'all' //connecting the same thing twice - put it in a separate file (vendors)
+        }
+    },
     plugins: [
         //all webpack plugins
         new HTMLWebpackPlugin({
